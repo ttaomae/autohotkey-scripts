@@ -1,9 +1,9 @@
-#Include caps_modifier.ahk
+#Include %A_ScriptDir%\caps_modifier.ahk
 
-#Include shutdown.ahk
-#Include window_manager.ahk
-#Include mirror_keyboard.ahk
+#Include %A_ScriptDir%\shutdown.ahk
+#Include %A_ScriptDir%\window_manager.ahk
+#Include %A_ScriptDir%\mirror_keyboard.ahk
 
-#Include media_hotkeys.ahk
-#Include navigation_hotkeys.ahk
-#Include misc_hotkeys.ahk
+#Include %A_ScriptDir%\media_hotkeys.ahk
+#Include %A_ScriptDir%\navigation_hotkeys.ahk
+#Include %A_ScriptDir%\misc_hotkeys.ahk
