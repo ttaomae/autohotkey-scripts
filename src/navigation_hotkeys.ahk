@@ -19,8 +19,88 @@ Appskey & D::Send {Right}
     ; D::Send {Right}
 
     ; Vim arrows
-    H::Send {Left}
-    J::Send {Down}
-    K::Send {Up}
+    ; H::Send {Left}
+    ; J::Send {Down}
+    ; K::Send {Up}
+    ; L::Send {Right}
+
+    ; IJKL arrows, UO Home/End, HN PgUp/PgDn
+    I::Send {Up}
+    J::Send {Left}
+    K::Send {Down}
     L::Send {Right}
+    U::Send {Home}
+    O::Send {End}
+    H::Send {PgUp}
+    N::Send {PgDn}
+
+    ; Ctrl + IJKLUOHN
+    ^I::Send ^{Up}
+    ^J::Send ^{Left}
+    ^K::Send ^{Down}
+    ^L::Send ^{Right}
+    ^U::Send ^{Home}
+    ^O::Send ^{End}
+    ^H::Send ^{PgUp}
+    ^N::Send ^{PgDn}
+
+    ; Alt + IJKLUOHN
+    !I::Send !{Up}
+    !J::Send !{Left}
+    !K::Send !{Down}
+    !L::Send !{Right}
+    !U::Send !{Home}
+    !O::Send !{End}
+    !H::Send !{PgUp}
+    !N::Send !{PgDn}
+
+    ; Shift + IJKLUOHN
+    +I::Send +{Up}
+    +J::Send +{Left}
+    +K::Send +{Down}
+    +L::Send +{Right}
+    +U::Send +{Home}
+    +O::Send +{End}
+    +H::Send +{PgUp}
+    +N::Send +{PgDn}
+
+    ; Ctrl + Alt + IJKLUOHN
+    ^!I::Send ^!{Up}
+    ^!J::Send ^!{Left}
+    ^!K::Send ^!{Down}
+    ^!L::Send ^!{Right}
+    ^!U::Send ^!{Home}
+    ^!O::Send ^!{End}
+    ^!H::Send ^!{PgUp}
+    ^!N::Send ^!{PgDn}
+
+    ; Ctrl + Shift + IJKLUOHN
+    ^+I::Send ^+{Up}
+    ^+J::Send ^+{Left}
+    ^+K::Send ^+{Down}
+    ^+L::Send ^+{Right}
+    ^+U::Send ^+{Home}
+    ^+O::Send ^+{End}
+    ^+H::Send ^+{PgUp}
+    ^+N::Send ^+{PgDn}
+
+    ; Alt + Shift + IJKLUOHN
+    !+I::Send !+{Up}
+    !+J::Send !+{Left}
+    !+K::Send !+{Down}
+    !+L::Send !+{Right}
+    !+U::Send !+{Home}
+    !+O::Send !+{End}
+    !+H::Send !+{PgUp}
+    !+N::Send !+{PgDn}
+
+    ; Ctrl + Alt + Shift + IJKLUOHN
+    ^!+I::Send ^!+{Up}
+    ^!+J::Send ^!+{Left}
+    ^!+K::Send ^!+{Down}
+    ^!+L::Send ^!+{Right}
+    ^!+U::Send ^!+{Home}
+    ^!+O::Send ^!+{End}
+    ^!+H::Send ^!+{PgUp}
+    ^!+N::Send ^!+{PgDn}
 #If

@@ -27,11 +27,14 @@ Provides miscellaneous hotkeys and remappings
 
 Hotkey | Function | Comment
 -------|----------|--------
-`mouse4` | `middle-click` 
+`mouse4` | `middle-click`
 `mouse4` + scroll wheel | `Page Up` / `Page Down`
 `Menu Key` + `[WASD]` | `[↑←↓→]`
-`Caps Lock` + `[WASD]` | `[↑←↓→]`
-`Caps Lock` + `[HJKL]` | `[←↓↑→]` | Disabled by default; interferes with mirror_keyboard script)
+(`Ctrl` + `Alt` + `Shift`) + `[IJKL]` | (`Ctrl` + `Alt` + `Shift`) + `[↑←↓→]`
+(`Ctrl` + `Alt` + `Shift`) + `[UO]` | (`Ctrl` + `Alt` + `Shift`) + `Home`/`End`
+(`Ctrl` + `Alt` + `Shift`) + `[HN]` | (`Ctrl` + `Alt` + `Shift`) + `PgUp`/`PgDn`
+`Caps Lock` + `[WASD]` | `[↑←↓→]` | Disabled by default (interferes with mirror_keyboard script)
+`Caps Lock` + `[HJKL]` | `[←↓↑→]` | Disabled by default (interferes with other navigation keys)
 `Windows Key` + scroll wheel | Volume up/down
 `mouse5` + scroll wheel | Volume up/down
 `Windows Key` + `(PageUp|PageDown)` | Volume up/down
