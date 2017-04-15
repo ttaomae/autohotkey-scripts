@@ -4,7 +4,9 @@ A miscellaneous collection of [AutoHotkey](http://ahkscript.org/) scripts. They 
 ## window_manager.ahk
 Adds additional windows tiling options beyond what Snap for Windows 7 and 8 provide (it is my understanding that Windows 10 has improved snap to do what this script does and probably more).
 
-Use the Windows Key and numpad to move the current active window to different edges of the screen or to different monitors. Numpad keys `1`-`9` move the window on the current screen, while `+` and `-` will move the window to the next or previous monitor. Numpad keys `*`, `/`, and `0` will maximize, restore, and minimize, respectively.
+Use the `Windows key` + Numpad keys to move the current active window to different edges of the screen or to different monitors. Numpad keys `1`-`9` move the window on the current screen, while `+` and `-` will move the window to the next or previous monitor. Numpad keys `*`, `/`, and `0` will maximize, restore, and minimize, respectively.
+
+Use the `Windows Key` + `Ctrl` + Numpad keys (`1`-`9`) to move the current active window to the edges of the region currently occupied by the window. This allows a limited form of additional tiling beyond just four quadrants.
 
 ## mirror_keyboard.ahk
 An implementation of the [Mirrorboard](http://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/).

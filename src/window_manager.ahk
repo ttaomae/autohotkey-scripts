@@ -1,3 +1,6 @@
+#Include %A_ScriptDir%\WinGetPosEx.ahk
+; https://autohotkey.com/boards/viewtopic.php?t=3392
+
 #Numpad1::WindowSnap(GetActiveWindow(), "bottom", "left")
 #Numpad2::WindowSnap(GetActiveWindow(), "bottom", "max")
 #Numpad3::WindowSnap(GetActiveWindow(), "bottom", "right")
@@ -14,6 +17,16 @@
 
 #NumpadAdd::WindowSnap(GetActiveWindow(), "center", "center", 1)
 #NumpadSub::WindowSnap(GetActiveWindow(), "center", "center", -1)
+
+^#Numpad1::WindowSubSnap(GetActiveWindow(), "bottom", "left")
+^#Numpad2::WindowSubSnap(GetActiveWindow(), "bottom", "max")
+^#Numpad3::WindowSubSnap(GetActiveWindow(), "bottom", "right")
+^#Numpad4::WindowSubSnap(GetActiveWindow(), "max", "left")
+^#Numpad5::WindowSubSnap(GetActiveWindow(), "center", "center")
+^#Numpad6::WindowSubSnap(GetActiveWindow(), "max", "right")
+^#Numpad7::WindowSubSnap(GetActiveWindow(), "top", "left")
+^#Numpad8::WindowSubSnap(GetActiveWindow(), "top", "max")
+^#Numpad9::WindowSubSnap(GetActiveWindow(), "top", "right")
 
 ; gets the id of the current active window
 GetActiveWindow()
@@ -74,6 +87,51 @@ WindowSnap(WinTitle, Vertical, Horizontal, MonitorDelta:=0)
     } else if (Horizontal = "center") {
         X := CX - (HW / 2)
         W := HW
+    }
+
+    ; restoring the window first is used to work around a bug where maximize
+        ; will not always work
+    ; however, this can cause a minor visual glitch
+    WinRestore, %WinTitle%
+    ResizeWindow(WinTitle, X, Y, W, H)
+}
+
+; snaps the specified window to one of the edges of the region currently
+; occupied by the window
+WindowSubSnap(WinTitle, Vertical, Horizontal)
+{
+    WinGet, active_id, ID, A
+    ; get window dimensions and store
+    WinGetPosEx(active_id, StartX, StartY, StartWidth, StartHeight)
+    HalfHeight := StartHeight / 2
+    HalfWidth := StartWidth / 2
+
+    if (Vertical = "top") {
+        Y := StartY
+        H := HalfHeight
+    } else if (Vertical = "bottom") {
+        Y := StartY + HalfHeight
+        H := HalfHeight
+    } else if (Vertical = "max") {
+        Y := StartY
+        H := StartHeight
+    } else if (Vertical = "center") {
+        Y := StartY + (HalfHeight / 2)
+        H := HalfHeight
+    }
+
+    if (Horizontal = "left") {
+        X := StartX
+        W := HalfWidth
+    } else if (Horizontal = "right") {
+        X := StartX + HalfWidth
+        W := HalfWidth
+    } else if (Horizontal = "max") {
+        X := StartX
+        W := Width
+    } else if (Horizontal = "center") {
+        X := StartX + (HalfWidth / 2)
+        W := HalfWidth
     }
 
     ; restoring the window first is used to work around a bug where maximize
