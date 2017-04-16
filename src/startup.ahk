@@ -1,3 +1,6 @@
+; Whether or not CapsLock and Esc Should be swapped.
+SwapCapsEsc := true
+
 #Include %A_ScriptDir%\caps_modifier.ahk
 
 #Include %A_ScriptDir%\shutdown.ahk
