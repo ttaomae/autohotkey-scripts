@@ -15,7 +15,7 @@ CapsLock::
       SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
     }
     Else {
-      Send {Esc}
+      Send {Esc down}{Esc up}
     }
   }
   Return
@@ -25,6 +25,6 @@ $Esc::
     SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
   }
   Else {
-    Send {Esc}
+    Send {Esc down}{Esc up}
   }
   Return
