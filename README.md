@@ -4,8 +4,8 @@ A miscellaneous collection of [AutoHotkey](http://ahkscript.org/) scripts. They 
 ## startup.ahk
 Aggregates other scripts. A shortcut to this file should be placed in your startup folder, located at C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.
 
-## caps_modifier.ahk
-Allows `Caps Lock` to be used as a modifier without toggling caps lock. Also optionally swaps `Caps Lock` and `Esc` if the variable `SwapCapsEsc` (defined in startup.ahk) is `true`.
+## capslock_hotkeys.ahk
+Allows `Caps Lock` to be used as a modifier without toggling caps lock. Also swaps `Caps Lock` and `Esc` when `Scroll Lock` is enabled.
 
 ## window_manager.ahk
 Adds additional windows tiling options beyond what Snap for Windows 7 and 8 provide (it is my understanding that Windows 10 has improved snap to do what this script does and probably more).
@@ -49,5 +49,5 @@ Hotkey | Function | Comment
 `Windows Key` + `Home` | Stop
 `Windows Key` + `Delete` | Previous
 `Windows Key` + `End` | Next
-`Caps Lock` | `Esc` | If `SwapCapsEsc` is `true`
-`Esc` | `Caps Lock` | If `SwapCapsEsc` is `true`
+`Caps Lock` | `Esc` | If `Scroll Lock` is on
+`Esc` | `Caps Lock` | If `Scroll Lock` is on

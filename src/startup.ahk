@@ -1,7 +1,4 @@
-; Whether or not CapsLock and Esc Should be swapped.
-SwapCapsEsc := true
-
-#Include %A_ScriptDir%\caps_modifier.ahk
+#Include %A_ScriptDir%\capslock_hotkeys.ahk
 
 #Include %A_ScriptDir%\shutdown.ahk
 #Include %A_ScriptDir%\window_manager.ahk
