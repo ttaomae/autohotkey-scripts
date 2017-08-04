@@ -103,4 +103,14 @@ Appskey & D::Send {Right}
     ^!+O::Send ^!+{End}
     ^!+H::Send ^!+{PgUp}
     ^!+N::Send ^!+{PgDn}
+
+    ; Extra shortcuts for Ctrl [+ Shift] + Left/Right
+    M::Send ^{Left}
+    .::Send ^{Right}
+    +M::Send ^+{Left}
+    +.::Send ^+{Right}
+
+    ; Backspace/Delete
+    P::Send {Backspace}
+    [::Send {Delete}
 #If

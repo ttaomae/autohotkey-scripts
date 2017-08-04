@@ -51,11 +51,14 @@ Hotkey | Function | Comment
 `mouse4` | `middle-click`
 `mouse4` + scroll wheel | `Page Up` / `Page Down`
 `Menu Key` + `[WASD]` | `[↑←↓→]`
-(`Ctrl` + `Alt` + `Shift`) + `[IJKL]` | (`Ctrl` + `Alt` + `Shift`) + `[↑←↓→]` | Any combination of `Ctrl`, `Alt`, and `Shift` can be used
-(`Ctrl` + `Alt` + `Shift`) + `[UO]` | (`Ctrl` + `Alt` + `Shift`) + `Home`/`End` | Any combination of `Ctrl`, `Alt`, and `Shift` can be used
-(`Ctrl` + `Alt` + `Shift`) + `[HN]` | (`Ctrl` + `Alt` + `Shift`) + `PgUp`/`PgDn` | Any combination of `Ctrl`, `Alt`, and `Shift` can be used
+`Caps Lock` + (`Ctrl` + `Alt` + `Shift`) + `[IJKL]` | (`Ctrl` + `Alt` + `Shift`) + `[↑←↓→]` | Any combination of `Ctrl`, `Alt`, and `Shift` can be used
+`Caps Lock` + (`Ctrl` + `Alt` + `Shift`) + `[UO]` | (`Ctrl` + `Alt` + `Shift`) + `Home`/`End` | Any combination of `Ctrl`, `Alt`, and `Shift` can be used
+`Caps Lock` + (`Ctrl` + `Alt` + `Shift`) + `[HN]` | (`Ctrl` + `Alt` + `Shift`) + `PgUp`/`PgDn` | Any combination of `Ctrl`, `Alt`, and `Shift` can be used
+`Caps Lock` + (`Shift`) + `[M.]` | (`Shift`) + `[←→]`
+`Caps Lock` + `P` | `Backspace`
+`Caps Lock` + `[` | `Delete`
 `Caps Lock` + `[WASD]` | `[↑←↓→]` | Disabled by default (interferes with mirror_keyboard script)
-`Caps Lock` + `[HJKL]` | `[←↓↑→]` | Disabled by default (interferes with other navigation keys)
+`Caps Lock` + `[HJKL]` | `[←↓↑→]` | Vim arrows. Disabled by default (interferes with other navigation keys)
 `Windows Key` + scroll wheel | Volume up/down
 `mouse5` + scroll wheel | Volume up/down
 `Windows Key` + `(PageUp|PageDown)` | Volume up/down
