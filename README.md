@@ -61,7 +61,7 @@ Hotkey | Function | Comment
 `Caps Lock` + `[HJKL]` | `[←↓↑→]` | Vim arrows. Disabled by default (interferes with other navigation keys)
 `Windows Key` + scroll wheel | Volume up/down
 `mouse5` + scroll wheel | Volume up/down
-`Windows Key` + `(PageUp|PageDown)` | Volume up/down
+`Windows Key` + `(PageUp\|PageDown)` | Volume up/down
 `Windows Key` + `Pause` | Mute
 `Windows Key` + `Insert` | Play/Pause
 `Windows Key` + `Home` | Stop
