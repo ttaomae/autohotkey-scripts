@@ -42,9 +42,9 @@ GetActiveWindow()
 WindowSnap(WinTitle, Vertical, Horizontal, MonitorDelta:=0)
 {
     ; find index of new monitor
-    SysGet, MonitorCount, MonitorCount
-    CurrentMonitor := GetWindowMonitor(WinTitle) - 1
-    NewMonitor := Mod(MonitorCount + CurrentMonitor + MonitorDelta, MonitorCount) + 1
+
+    GetWindowCenterXY(WinTitle, X, Y)
+    NewMonitor := GetMonitor(X, Y, MonitorDelta)
 
     GetMonitorDimensions(NewMonitor, CX, CY, HW, HH)
 
@@ -139,41 +139,6 @@ WindowSubSnap(WinTitle, Vertical, Horizontal)
     ; however, this can cause a minor visual glitch
     WinRestore, %WinTitle%
     ResizeWindow(WinTitle, X, Y, W, H)
-}
-
-; gets the index of the monitor that the specified window is on
-; the monitor is determined by the center of the window
-GetWindowMonitor(WinTitle)
-{
-    GetWindowCenterXY(WinTitle, X, Y)
-
-    SysGet, MonitorCount, MonitorCount
-    ; for each monitor
-    Loop, %MonitorCount%
-    {
-        SysGet, Monitor, Monitor, %A_Index%
-
-        ; check if center of window is within bounding box of monitor
-        if (X >= MonitorLeft && X <= MonitorRight
-                && Y >= MonitorTop && Y <= MonitorBottom) {
-            return %A_Index%
-        }
-    }
-
-    return 0
-}
-
-; gets the dimensions of the specified monitor
-; CX/CY = center X/Y
-; HW/HH = half width/height
-GetMonitorDimensions(MonitorN, byref CX, byref CY, byref HW, byref HH)
-{
-    SysGet, Monitor, MonitorWorkArea, %MonitorN%
-
-    CX := (MonitorLeft + MonitorRight) / 2
-    CY := (MonitorTop + MonitorBottom) / 2
-    HW := (MonitorRight - MonitorLeft) / 2
-    HH := (MonitorBottom - MonitorTop) / 2
 }
 
 ; resizes the specified window so that the top left corner is at (X, Y) and
