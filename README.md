@@ -3,6 +3,14 @@ A miscellaneous collection of [AutoHotkey](http://ahkscript.org/) scripts. They 
 with my specific usage in mind and often assume that a 5-button mouse is being used. However, you
 may find some of them useful.
 
+As much as possible, hotkeys are designed to be non-intrusive. In general, they should not interfere
+with default keyboard or mouse behavior for single key/button presses (e.g. pressing the 'A' key,
+sends an 'A') and they should not change Windows shortcuts (e.g. Windows+D to show the desktop) or
+common application shortcuts (e.g. Ctrl+C to copy). The goal is that an "average" user should not
+notice any difference unless they are explicitly told about new hotkeys. For my purposes I've
+assumed that an average user is not familiar with the fourth and fifth mouse buttons, allowing those
+to be remapped.
+
 ## startup.ahk
 Aggregates other scripts. A shortcut to this file should be placed in your startup folder at
 **C:\\Users\\&lt;username&gt;\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup**.
