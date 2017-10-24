@@ -13,6 +13,9 @@ beginning of the line) the corresponding `#Include` statement.
 Allows `Caps Lock` to be used as a modifier without toggling caps lock. Also swaps `Caps Lock` and
 `Esc` when `Scroll Lock` is enabled.
 
+## monitors.ahk
+Provides functions for working with monitors.
+
 ## window_manager.ahk
 Adds additional window tiling options beyond what Snap for Windows 7 and 8 provide. Windows 10 has
 improved window tiling and more overlap with this script. This script does not interfere with Snap,
@@ -26,6 +29,10 @@ maximize, restore, and minimize, respectively.
 Use the `Windows Key` + `Ctrl` + Numpad keys (`1`-`9`) to move the current active window to the
 edges of the region currently occupied by the window. This allows a limited form of additional
 tiling beyond just four quadrants.
+
+## mouse_manager.ahk
+Provides hotkeys for quickly moving the mouse between monitors. This may be useful when desk space
+is limited or when using high resolution monitors or a mouse with low sensitivity.
 
 ## mirror_keyboard.ahk
 An implementation of the
