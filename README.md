@@ -41,20 +41,14 @@ An implementation of the
 In addition to using caps lock as the modifier, it also allows the use of the fourth mouse button,
 which frees up your left pinky, making it a little more natural to type.
 
-## shutdown.ahk
-Provides hotkeys to sleep, hibernate, or shutdown your computer.
-
-Hotkey | Function
--------|---------
-`Ctrl` + `Esc` | Sleep
-`Ctrl` + `Windows Key` + `Esc` | Hibernate
-`Ctrl` + `Windows Key` + `Alt` + `Esc` | Shut down
-
 ## *_hotkeys.ahk
 Provides miscellaneous hotkeys and remappings
 
 Hotkey | Function | Comment
 -------|----------|--------
+`Windows Key` + `Esc` | Sleep
+`Windows Key` + `Ctrl` + `Esc` | Hibernate
+`Windows Key` + `Ctrl` + `Alt` + `Esc` | Shut down
 `mouse4` | `middle-click`
 `mouse4` + scroll wheel | `Page Up` / `Page Down`
 `Menu Key` + `[WASD]` | `[↑←↓→]`

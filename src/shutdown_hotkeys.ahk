@@ -5,10 +5,10 @@
   DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
   Return
 
-; Ctrl+Win+Escape => sleep
-^#Escape::
+; Win+Ctrl+Escape => sleep
+#^Escape::
   DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
   Return
 
-; Alt+Ctrl+Win+Escape => shut down
-!^#Escape::Shutdown, 1+8 ; Shutdown + Power down
+; Win+Ctrl+Alt+Escape => shut down
+#^!Escape::Shutdown, 1+8 ; Shutdown + Power down
