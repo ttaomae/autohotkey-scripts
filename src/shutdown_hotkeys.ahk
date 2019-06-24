@@ -5,7 +5,7 @@
   DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
   Return
 
-; Win+Ctrl+Escape => sleep
+; Win+Ctrl+Escape => hibernate
 #^Escape::
   DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
   Return
