@@ -113,4 +113,7 @@ Appskey & D::Send {Right}
     ; Backspace/Delete
     P::Send {Backspace}
     [::Send {Delete}
+
+    ; Enter
+    `;::Send {Enter}`
 #If
